@@ -1,0 +1,23 @@
+{
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft": "Warning",
+            "Microsoft.EntityFrameworkCore": "Error",
+            "Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware": "Error",
+            "Microsoft.Hosting.Lifetime": "Information"
+        },
+        "ApplicationInsights": {
+            "LogLevel": {
+                "Default": "Error",
+                "Microsoft": "Error"
+            }
+        }
+    },
+    "ConnectionStrings": {
+        "Sql": "DataSource=:memory:"
+    },
+    "AuthEnabled": false,
+    "Options": {
+    }
+}

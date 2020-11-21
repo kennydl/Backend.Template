@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="Utilities\Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Backend.Template.Core\Backend.Template.Core.csproj" />
+  </ItemGroup>
+</Project>

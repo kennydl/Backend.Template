@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <LangVersion>default</LangVersion>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Content Remove="Properties\launchSettings.json" />
+    <Content Update="local.settings.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="WeatherForecast.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.16.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.AzureAD.UI" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Backend.Template.Infrastructure\Backend.Template.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
